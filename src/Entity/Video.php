@@ -37,6 +37,11 @@ class Video
      */
     private $publishedAt;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $file;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class Video
     public function setPublishedAt(\DateTimeInterface $publishedAt): self
     {
         $this->publishedAt = $publishedAt;
+
+        return $this;
+    }
+
+    public function getFile(): ?string
+    {
+        return $this->file;
+    }
+
+    public function setFile(string $file): self
+    {
+        $this->file = $file;
 
         return $this;
     }
