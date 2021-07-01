@@ -1,13 +1,8 @@
-App\Entity\video:
-  video1{1..50}:
-    title: '<word()>'
-    file: '/video-test/taking-the-hobbits-to-isengard.mp4'
-    like_counter: '<randomDigit()>'
-    description: '<username()>'
-    publishedAT: '<DateTimeThisMonth()>'
-  video2{1..50}:
-    title: '<word()>'
-    file: '/video-test/keyboard-cat.mp4'
-    like_counter: '<randomDigit()>'
-    description: '<username()>'
-    publishedAT: '<DateTimeThisMonth()>'
+App\Entity\Video:
+    video{1..50}:
+        title: '<sentence(5, true)>'
+        description: '80%? <paragraphs(2, true)>'
+        likeCounter: '<numberBetween(0, 6000)>'
+        publishedAt: '<dateTimeThisMonth()>'
+        file: '/video-test/<randomElement(["keyboard-cat.mp4","nyan-cat.mp4","taking-the-hobbits-to-isengard.mp4"])>'
+        owner: '@user*'

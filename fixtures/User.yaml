@@ -1,14 +1,15 @@
-#User.yaml
+# User.yaml
 App\Entity\User:
-   user{0..99}:
-     email (unique): '<email()>'
-     password: '1234'
-     firstName: '<firstName()>'
-     lastName: '<lastName()>'
-     lastConnectionAT: '<dateTimeThisMonth()>'
-   admin:
-     email: 'admin@videotube.com'
-     password: 'admin'
-     firstName: 'the admin'
-     lastName: 'ADMIN'
-     lastConnectionAT: '<dateTimeThisMonth()>'
+    user{1..100}:
+        email (unique): '<email()>'
+        password: '1234'
+        firstName: '<firstName()>'
+        lastName: '<lastName()>'
+        lastConnectionAt: '<dateTimeThisMonth()>'
+
+    admin:
+        email: 'admin@videotube.com'
+        password: 'admin'
+        firstName: 'The admin'
+        lastName: 'ADMIN'
+        lastConnectionAt: '<dateTimeThisMonth()>'

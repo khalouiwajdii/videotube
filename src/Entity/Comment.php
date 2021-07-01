@@ -25,7 +25,7 @@ class Comment
     /**
      * @ORM\Column(type="datetime")
      */
-    private $publishedAT;
+    private $publishedAt;
 
     public function getId(): ?int
     {
@@ -44,14 +44,14 @@ class Comment
         return $this;
     }
 
-    public function getPublishedAT(): ?\DateTimeInterface
+    public function getPublishedAt(): ?\DateTimeInterface
     {
-        return $this->publishedAT;
+        return $this->publishedAt;
     }
 
-    public function setPublishedAT(\DateTimeInterface $publishedAT): self
+    public function setPublishedAt(\DateTimeInterface $publishedAt): self
     {
-        $this->publishedAT = $publishedAT;
+        $this->publishedAt = $publishedAt;
 
         return $this;
     }

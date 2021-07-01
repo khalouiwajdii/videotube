@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * @Route("/admin/video")
  */
-class videoController extends AbstractController
+class VideoController extends AbstractController
 {
     /**
      * @Route("/", name="admin_video_index", methods={"GET"})
