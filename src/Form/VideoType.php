@@ -13,6 +13,7 @@ class VideoType extends AbstractType
     {
         $builder
             ->add('title')
+            ->add('file')
             ->add('description')
             ->add('likeCounter')
             ->add('publishedAt')

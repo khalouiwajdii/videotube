@@ -5,7 +5,10 @@
 {% block body %}
 <div class="container">
     <h1>Video</h1>
+    <video id="player" playsinline controls class="w-50">
+        <source src="{{ video.file }}" type="video/mp4" />
 
+    </video>
     <table class="table">
         <tbody>
             <tr>

@@ -1,0 +1,13 @@
+App\Entity\video:
+  video1{1..50}:
+    title: '<word()>'
+    file: '/video-test/taking-the-hobbits-to-isengard.mp4'
+    like_counter: '<randomDigit()>'
+    description: '<username()>'
+    publishedAT: '<DateTimeThisMonth()>'
+  video2{1..50}:
+    title: '<word()>'
+    file: '/video-test/keyboard-cat.mp4'
+    like_counter: '<randomDigit()>'
+    description: '<username()>'
+    publishedAT: '<DateTimeThisMonth()>'
